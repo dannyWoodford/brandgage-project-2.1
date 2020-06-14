@@ -1,0 +1,49 @@
+.literature {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: transparent;
+
+
+        
+    .literature__container {
+        position: absolute;
+        width: 70%;
+        height: 80%;
+        margin: 118px 15% 0% 15%;
+        background: transparent;
+        display: block;
+        color: $white;
+        font-size: 14px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        .literature__container__text {
+            width: 100%;
+            height: 10vh;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            padding: 2vh;
+            margin-bottom: 2vh;
+            font-weight: 200;
+        }
+
+            #literature-title {
+                font-size: 2rem;
+                padding: 1rem;
+            }
+        
+            #literature-info {
+                margin-top: 3vh;
+                font-size: .875rem;
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            
+    }
+}

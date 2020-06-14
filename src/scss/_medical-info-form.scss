@@ -1,0 +1,405 @@
+.medical-info-form {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: transparent;
+
+
+        
+    .medical-info-form__container {
+        position: absolute;
+        width: 70%;
+        height: 80%;
+        margin: 118px 15% 0% 15%;
+        background: transparent;
+        display: block;
+        color: $white;
+        font-size: 14px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+         
+          
+          .medical-info-form__container__text {
+            width: 100%;
+            height: 10vh;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            padding: 2vh;
+            margin-bottom: 2vh;
+          }
+
+          #medical-form-title {
+            font-size: 32px;
+            padding: 15px;
+          }
+      
+          #medical-form-info {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+          }
+
+          
+          .form-row {
+              height: 10vh;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+              background: transparent;
+              
+              .form-column {
+                  height: 100%;
+                  width: 100%;
+                  padding: 7px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-evenly;
+                  background: transparent;
+                }
+                
+            label {
+                margin-left: 5px;
+              display: block;
+            }
+            
+            select, input {
+                background: white;
+                border: none;
+                box-shadow: none;
+                height: 4vh;
+                outline: none;
+            }
+            
+        }
+        
+        .medical-credential__container{
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto auto;
+  
+            .medical-credential__text{
+              grid-row: 1;
+              font-size: 20px;
+              font-weight: 400;
+              padding: 10px;
+              color: rgba(255, 255, 255, 0.8);
+            }
+  
+            .medical-credential-checkboxs {
+                grid-row: 2;
+                padding-top: 15px;
+                font-weight: 400;
+              
+              .form-row {
+                height: 10vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                background: transparent;
+                
+                .form-column {
+                    height: 100%;
+                    width: 100%;
+                    padding: 7px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                    background: transparent;
+                }
+
+                
+                    input {
+                        margin: 0px 20px 0px 20px;
+                        transform: scale(2);
+                    }
+
+                .form-column-other{
+                    height: 100%;
+                    width: 100%;
+                    padding: 7px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    background: transparent;
+                    
+                }
+                    input[type=text] {
+                        margin-left: 63px;
+                        height: 2vh;
+                        width: 8vw;
+                    }
+                }
+            }
+        }
+        .medical-product__container{
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto auto;
+  
+            .medical-product__text{
+              grid-row: 1;
+              font-size: 20px;
+              font-weight: 400;
+              padding: 10px;
+              color: rgba(255, 255, 255, 0.8);
+            }
+  
+            .medical-product-checkboxs {
+                grid-row: 2;
+                border-radius: 50%;
+                padding-top: 15px;
+                font-weight: 400;
+              
+              .form-row {
+                height: 10vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                background: transparent;
+                
+                .form-column {
+                    height: 100%;
+                    width: 100%;
+                    padding: 7px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                    background: transparent;
+                }
+
+                    input {
+                        height: 1.3em;
+                        background-color: white;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                        border: 1px solid #ddd;
+                        -webkit-appearance: none;
+                        outline: none;
+                        cursor: pointer;
+                        margin: 0px 20px 0px 20px;
+                        transform: scale(2);
+                        width: 1.3em;
+                    }
+
+                    input:checked {
+                        background-color: $blue;
+                    }
+                   
+
+                }
+            }
+        }
+        
+    }
+
+
+    .provide-information__container{
+        height: 25vh;
+        width: 95%;
+        // margin:5%;
+        display: flex;
+        flex-direction: column;
+
+        .provide-information__text {
+            padding: 20px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        textarea {
+            height: 80%;
+            width: 100%;
+            background: white;
+        }
+
+    }
+
+
+    .signature-container {
+        height: fit-content;
+        width: 95%;
+        margin-top:5vh;
+        margin-bottom:5vh;
+        display: flex;
+        flex-direction: column;
+
+        .signature__text {
+            margin-bottom:1vh;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+
+        #sig-canvas {
+            border: 2px solid #CCCCCC;
+            background: white;
+            cursor: crosshair;
+        }
+
+        .row {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 25%;
+            
+            #ck-button label {
+                float:left;
+                width:4.0em;
+                
+                input {
+                    transform: scale(.1, .1);
+                    float: right;
+                }
+                span {
+                    text-align:center;
+                    width: 100px;
+                    padding:9px 0px;
+                    display:block;
+                    background: white;
+                    border: 1px solid black;
+                    border-radius: 4px;
+                    color: black
+                }
+            }
+            
+            #sig-clearBtn{
+                background: white;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+            }
+        }
+        
+        .signiture-placeholder{
+            text-indent: -9999px;
+            height:1px;
+            width: 1px;
+        }
+
+        .show-signiture {
+            height: 20vh;
+            width: 60%
+        }
+        
+        
+    }
+
+
+    .preferred-contact__container{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto;
+
+        .preferred-contact__text{
+          grid-row: 1;
+          font-size: 18px;
+          font-weight: 400;
+          padding: 10px;
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        .preferred-contacts {
+          grid-row: 2;
+          display: flex;
+          flex-direction: row;
+          padding-top: 15px;
+          font-weight: 400;
+
+          input {
+            margin: 0px 20px 0px 20px;
+            transform: scale(1.5);
+          }
+          
+        }
+      }
+
+
+    .medical-info-form__submit__container {
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        margin-bottom: 40px;
+        padding: 0px;
+
+        .medical-info-form__submit__text {
+          grid-row: 1;
+          text-align: center;
+          padding: 15px;
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        button.medical-info-form__submit {
+          grid-row: 2;
+          height: 50px;
+          width: 240px;
+          background: #DEE9EE;
+          background-size: cover;
+          background-position: right;
+          margin: 0;
+          padding:0;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          -webkit-box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.2); 
+          box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.2);
+          
+          
+          p{
+            position: absolute;
+            z-index: 2;
+            margin: 2.2% 0% 0% 7%;
+            font-size: 16px;
+            font-weight: bold;
+            color: $blue;
+          }
+          
+          .medical-info-form__submit-inner {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding:0;
+            background: url("/assets/submit_arrow.png");
+            clip-path: inset(0 0 0 78%);
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+            transition: all 0.5s cubic-bezier(0.62, -0.42, 1, 1);
+          
+          }
+
+          &:hover .medical-info-form__submit-inner {
+            clip-path: inset(0 0 0 0%);
+          }
+        }
+      }
+
+      .required-field {
+        padding: 2px;
+        font-size: 18px;
+        color: rgb(50, 202, 253);
+      }
+
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+        background:rgba(255, 255, 255, 0.1); 
+        box-shadow: inset 0 0 6px     rgba(0,0,0,0.3);
+        -webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.3); 
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: white; 
+        border-radius: 10px;
+        box-shadow: inset 0 0 6px     rgba(0,0,0,0.5);
+        -webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.5); 
+    }
+}

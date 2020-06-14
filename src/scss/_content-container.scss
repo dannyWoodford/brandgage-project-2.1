@@ -1,0 +1,37 @@
+.content {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+
+    .content__back-button {
+        position: absolute;
+        z-index: 10;
+        display: block;
+        height: fit-content;
+        width: fit-content;
+        top: 200px;
+        left: 16vw;
+        display: flex;
+        flex-direction: row;
+        color: white;
+
+        .back-button__arrow {
+            font-size: 1rem;
+            margin-right: 0.3rem;
+        }
+        
+        .back-button__text {
+            font-size: 1rem;
+            text-decoration: underline;
+        }
+    }
+
+    .content__container {
+        position: absolute;
+        background: transparent;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+}

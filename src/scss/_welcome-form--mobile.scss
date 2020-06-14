@@ -1,0 +1,125 @@
+
+  @media only screen and (max-width: 600px) {
+    .welcome-form__page {
+      overflow: scroll;
+      background: rgba(0, 82, 122, 1);
+
+      .welcome-form__page__header {
+        height: 100px;
+        position: fixed;
+  
+        .welcome-form__page__header__logo {
+          width: 100%;
+          border-bottom: 2px solid $blue;
+  
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      .welcome-form__page__container__form {
+        width: 100%;
+        // margin: 155px 5% 0% 5%;
+        font-size: .875rem;
+        
+        .welcome-form__page__text {
+          width: 90%;
+          height: 10%;
+          margin: 130px 5% 0% 5%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          text-align: center;
+          margin-bottom: 2vh;
+          
+          #welcome-text {
+            font-size: 1.9rem;
+            padding: 0px 0px 25px 0px;
+          }
+
+          #welcome-text-info {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.8);
+          }
+
+        }
+
+          #welcome-form {
+            width: 84%;
+            margin: 5px 8% 0% 8%;
+            display: block;
+  
+
+            .form-row {
+              height: 10vh;
+              width: 100%;
+              display: table-footer-group;
+
+              .form-column {
+                height: 100%;
+                width: 100%;
+                padding: 0px;
+                display: inline-flex;
+              }
+
+              label {
+                margin: 12px 4px;
+                font-size: 1rem;
+                font-weight: 200;
+              }
+            
+              select, input {
+                height: 6vh;
+                width: 100%;
+              }
+
+            }
+            
+            .radio-button__container{
+              margin: 20px 0px 40px 0px;
+
+              .radio-button__text{
+                font-size: 1rem;
+              }
+
+              .radio-buttons {
+
+                input {
+                  transform: scale(2);
+                  padding: 10px;
+                }
+                
+              }
+            }
+
+            .welcome-form__page__submit__container {
+              margin: 0px 0px 60px 0px;
+
+              .welcome-form__page__submit__text {
+                grid-row: 1;
+                text-align: center;
+                padding: 15px;
+                color: rgba(255, 255, 255, 0.8);
+              }
+
+              button.welcome-form__submit {
+                
+                p{
+                  position: absolute;
+                  margin: 15px 0% 0% 20%;
+                }
+                
+              }
+            }
+
+          .required-field {
+            padding: 2px;
+            font-size: 22px;
+            color: rgb(50, 202, 253);
+          }
+        }
+      }
+    }
+  }
